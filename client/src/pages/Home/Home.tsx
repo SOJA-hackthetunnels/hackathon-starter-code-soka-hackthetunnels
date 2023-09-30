@@ -16,6 +16,8 @@ function Home() {
     fetchData();
   }, []);
 
+
+
   return (
     <Page>
       <div className="home-page">

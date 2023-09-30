@@ -1,6 +1,11 @@
 .home-page {
   &__title {
-    color: red;
+    background-color: var(--background-light);
+    color: var(--text-light);
+  }
+
+  h1 {
+    color: var(--link-light);
   }
 
   &__products {
@@ -10,6 +15,27 @@
     a {
       text-decoration: none;
       color: inherit;
+    }
+  }
+}
+
+:root {
+  --background-light: #ffffff;
+  --text-light: #333333;
+  --link-light: #0077cc;
+
+  --background-dark: #333333;
+  --text-dark: #ffffff;
+  --link-dark: #66aacc;
+}
+
+@media (prefers-color-scheme: dark) {
+  .home-page {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+
+    h1 {
+      color: var(--link-dark);
     }
   }
 }
